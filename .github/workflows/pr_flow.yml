@@ -24,4 +24,6 @@ jobs:
            git config --local user.name "Ravi Vasista"
            git config --global hub.protocol ssh
            bin/hub pull-request --base raviv1995:dev --head arita37:dev -m "My title"
+      env:
+           GITHUB_TOKEN: ${{ secrets.GIT_TOKEN }}
   
